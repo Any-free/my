@@ -10,6 +10,5 @@ npm i @my_fn/fn_throttle -S
 ```
 
 ## 有什么?
-[@any_free/fn_debounce]防抖.
-
-[@any_free/fn_debounce]节流.
+debounce(fn,time)防抖
+throttle(fn,time)节流

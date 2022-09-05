@@ -1,5 +1,5 @@
 {
-  "name": "fn_debounce",
+  "name": "fn_utils",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
@@ -9,5 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "files": []
+  "files": [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Any-free/my_fn/tree/master/src"
+  }
 }
