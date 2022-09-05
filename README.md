@@ -4,10 +4,6 @@
 
 ## 安装
 ```shell
-npm install utils-fn -S
+npm install @any_free/utils-fn -S
 ...
 ```
-
-## 有什么?
-debounce(fn,time)防抖
-throttle(fn,time)节流
