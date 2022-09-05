@@ -1,5 +1,5 @@
 // 防抖
-export function debounce(fn, gapTime = 200) {
+function debounce(fn, gapTime = 200) {
     let timer;
     return () => {
         clearTimeout(timer);
@@ -12,7 +12,7 @@ export function debounce(fn, gapTime = 200) {
 }
 
 // 节流
-export function throttle(fn, gapTime = 200) {
+function throttle(fn, gapTime = 200) {
     let _lastTime = null;
     return () => {
         let _nowTime = +new Date();
@@ -22,3 +22,5 @@ export function throttle(fn, gapTime = 200) {
         }
     };
 };
+
+module.export = { debounce, throttle }
