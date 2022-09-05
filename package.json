@@ -1,6 +1,6 @@
 {
   "name": "@any_free/utils_fn",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
   "type": "module",
@@ -9,7 +9,7 @@
     "build": "rollup --config rollup.config.js "
   },
   "keywords": [],
-  "author": "",
+  "author": "Any_free",
   "license": "MIT",
   "files": [],
   "repository": {
