@@ -4,8 +4,7 @@
 
 ## 安装
 ```shell
-npm i @my_fn/fn_debounce -S
-npm i @my_fn/fn_throttle -S
+npm install utils-fn -S
 ...
 ```
 
