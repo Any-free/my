@@ -4,8 +4,3 @@
 npm install @any_free/utils_fn -S
 ```
 ## 使用
-### 判断是否是否URL
-```
-import { isUrl } from '@any_free/utils_fn'
-isUrl('str')
-```

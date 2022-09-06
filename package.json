@@ -1,6 +1,6 @@
 {
   "name": "@any_free/utils_fn",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "常用工具函数",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",

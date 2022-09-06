@@ -43,11 +43,15 @@ export function getDeviceOS() {
  * @param  {Number} totalNum 脱敏字数
  * @returns {String}
  */
-export function formatStr(str,startNum,totalNum) {
-    if(str.length <= startNum + totalNum){
+export function formatStr(str, startNum, totalNum) {
+    if (str.length <= startNum + totalNum) {
         throw Error('参数不合法');
     }
-    var newStr = str.substring(0, startNum) + ' ******* ' + str.substring(startNum + totalNum, str.length);
+    let replaceStr = '';
+    for (var i = 0; i < totalNum; i++) {
+        i += '*'
+    }
+    let newStr = str.substring(0, startNum) + replaceStr + str.substring(startNum + totalNum, str.length);
     return newStr;
 }
 
