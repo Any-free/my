@@ -13,7 +13,7 @@ export function isUrl(url) {
  * @param  {String} idCardNum 身份证号码
  * @returns {Boolean}
  */
-export function isIdNo(idCardNum) {
+export function isCardNum(idCardNum) {
     if (!idCardNum || !/^\d{6}(18|19|20)?\d{2}(0[1-9]|1[012])(0[1-9]|[12]\d|3[01])\d{3}(\d|X|x)$/.test(idCardNum)) {
         return false;
     }
@@ -44,14 +44,15 @@ export function getDeviceOS() {
  * @returns {String}
  */
 export function formatStr(str, startNum, totalNum) {
+    let newStr;
     if (str.length <= startNum + totalNum) {
-        throw Error('参数不合法');
+        newStr = '';
     }
-    let replaceStr = '';
+    var replaceStr = '';
     for (var i = 0; i < totalNum; i++) {
-        i += '*'
+        replaceStr += '*'
     }
-    let newStr = str.substring(0, startNum) + replaceStr + str.substring(startNum + totalNum, str.length);
+    newStr = str.substring(0, startNum) + replaceStr + str.substring(startNum + totalNum, str.length);
     return newStr;
 }
 
