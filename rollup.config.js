@@ -1,23 +1,18 @@
-export default {
-    input: "./src/index.js",
-    output: [
-      {
-        file: './dist/utils_fn.js',
-        format: 'umd',
+import { defineConfig } from 'rollup';
+export default defineConfig({
+    input: "index.js",
+    output: [{
+        format: "es",
+        file: "dist/index.es.js",
         sourcemap: true,
-        name: 'utils_fn',
-        //当入口文件有export时，'umd'格式必须指定name
-        //这样，在通过<script>标签引入时，才能通过name访问到export的内容。
-      },
-    //   {
-    //     file: './dist/index.es.js',
-    //     format: 'es',
-    //     sourcemap: true,
-    //   },
-    //   {
-    //     file: './dist/index.cjs.js',
-    //     format: 'cjs',
-    //     sourcemap: true,
-    //   }
-    ]
-  }
+    }, {
+        format: "cjs",
+        file: "dist/index.cjs.js",
+        sourcemap: true,
+    }, {
+        format: "umd",
+        name: "utils_fn",
+        file: "dist/index.umd.js",
+        sourcemap: true,
+    }]
+})

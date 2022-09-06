@@ -1,17 +1,21 @@
 {
   "name": "@any_free/utils_fn",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/index.js",
-  "type": "module",
+  "description": "常用工具函数",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "unpkg": "dist/index.min.js",
+  "jsdelivr": "dist/index.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup --config rollup.config.js "
   },
-  "keywords": [],
+  "keywords": ["utils","utils_fn"],
   "author": "Any_free",
-  "license": "MIT",
-  "files": [],
+  "license": "ISC",
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/Any-free/my_fn"
